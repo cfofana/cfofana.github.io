@@ -169,8 +169,10 @@
 }
 #socialMedia i{
     color:white;
+    padding-right: 12.5px;
+    padding-left: 12.5px;
 }
-#socialMedia span{
-    padding: 10px;
+#socialMedia i:hover{
+    background: #4691A4;
 }
 
