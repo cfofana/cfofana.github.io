@@ -18,21 +18,28 @@
     font-weight:500;
     font-size: 50px;
     color: #118C8B;
-    width: 60%;
+    width: 55%;
     height: 60px;
     float: left;
     font-family: 'Courgette', cursive;
     padding-left: 13%;
 }
 #navbar{
-    width: 45%;
+    width: 32%;
     float: right;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
 }
 #navbar a{
         color: #118C8B;
+        font-size: 18px;
+        text-decoration: none;
+        padding-right: 10px;
 } 
+#navbar li{
+    list-style: none;
+    display: inline;
+}
 
 #previous{
     font-size: 3em;
