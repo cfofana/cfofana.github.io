@@ -1,0 +1,153 @@
+.bgImage{
+    height: 645px;
+    background-image: url('images/coffee-desk-laptop-notebook(2).jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    margin:1%;
+    margin-top: 0;
+    padding-bottom: 20%;
+    
+}
+.heading{
+    width: 100%;
+    height: 60px;
+}
+
+#myName{
+    font-weight:500;
+    font-size: 50px;
+    color: #118C8B;
+    width: 60%;
+    height: 60px;
+    float: left;
+    font-family: 'Courgette', cursive;
+    padding-left: 13%;
+}
+#navbar{
+    width: 40%;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+#navbar a{
+        color: #118C8B;
+} 
+
+#previous{
+    font-size: 3em;
+    color:darkcyan;
+    text-align: center;
+}
+
+.firstSection{
+    width: 100%;
+    text-align: center; 
+}
+
+.secondSection{
+    width: 100%; 
+    text-align: center;
+    padding-bottom: 10%;
+}
+.firstSection img{
+    width: 31%;
+    height: 50%;
+    margin:1%;
+    padding-bottom: 3%;
+}
+
+.secondSection img{
+    width: 31%;
+    height: 50%;
+    margin:1%;
+}
+
+.bottom{
+    
+}
+
+.myInfo{
+    width: 45%;
+    display: inline-block;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 50px;
+}
+.formDesign{
+    width: 45%;
+    display: inline-block;
+    padding-left:50px;
+}
+.headInfo{
+    font-size: 2em;
+    font-weight: bold;
+}
+.formDesign ul{
+    margin: auto;
+    max-width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    border-left: 3px solid #F2F6F7;
+
+}
+.formDesign li{
+    list-style: none;
+    margin-bottom: 15px;
+    padding:0;
+    
+}
+.formDesign label{
+    display: block;
+    margin: 0 0 4px 0;
+    padding:0;
+}
+.formDesign input[type=text], textarea, select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+.formDesign input[type=text]:focus, textarea:focus, select:focus{
+    box-shadow: 0 0 8px #88D5E9;
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+
+}
+.divided{
+    width: 49.5%;
+}
+.email{
+    width: 100%;
+}
+.select{
+    width: 100%;
+}
+.textarea{
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+.submit{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.submit:hover{
+    background: #4691A4;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.required{
+    color: red;
+}
+
+
+
