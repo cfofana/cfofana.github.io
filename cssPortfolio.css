@@ -58,22 +58,22 @@
     padding-bottom: 10%;
 }
 .firstSection img{
-    width: 31%;
+    width: 30%;
     height: 50%;
     margin:1%;
     padding-bottom: 3%;
 }
 
 .secondSection img{
-    width: 31%;
+    width: 30%;
     height: 50%;
     margin:1%;
 }
-
-.bottom{
-    
+img:hover{
+    box-shadow: 0 0 8px #88D5E9;
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
 }
-
 #myInfo{
     width: 45%;
     display: inline-block;
