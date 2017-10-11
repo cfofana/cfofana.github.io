@@ -165,7 +165,7 @@ img:hover{
 #socialMedia p{
     font-size: 28px;
     padding-top: 25px;
-    color: white;
+    color:white;
 }
 #socialMedia i{
     color:white;
@@ -175,4 +175,7 @@ img:hover{
 #socialMedia i:hover{
     background: #4691A4;
 }
-
+#copyright{
+    text-align:left;
+    font-size: 15px;    
+}
