@@ -1,5 +1,7 @@
 .bgImage{
     height: 645px;
+    max-width: 100%;
+    background-size:cover;
     background-image: url('images/coffee-desk-laptop-notebook(2).jpg');
     background-repeat: no-repeat;
     background-position: right top;
@@ -7,7 +9,7 @@
     margin:1%;
     margin-top: 0;
     padding-bottom: 20%;
-    
+    margin-bottom:10px;    
 }
 .heading{
     width: 100%;
@@ -36,9 +38,45 @@
         text-decoration: none;
         padding-right: 10px;
 } 
+#navbar a:hover{
+    background-color:azure;
+    color: darkred;
+}
 #navbar li{
     list-style: none;
     display: inline;
+}
+
+.icon{
+    display:none;
+}
+/* cater to different screen sizes. Nav bar reduced to icon in screens smaller than 600px */
+@media screen and (max-width:600px){
+    
+    #navbar a{
+        display:none;
+    }
+    #navbar a.icon{
+        float: right;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    #navbar.topNav.responsive a{
+        display:block;
+        text-align:left;
+        float:none;
+    }
+    .topNav.responsive a.icon{
+        position:absolute;
+        top: 0;
+        right:0;
+    }
+    
+    #myName{
+    font-weight:500;
+    font-size: 44px;
+    overflow:hidden;
 }
 
 #previous{
@@ -179,3 +217,5 @@ img:hover{
     text-align:left;
     font-size: 15px;    
 }
+
+
