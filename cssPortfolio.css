@@ -50,30 +50,7 @@
 .icon{
     display:none;
 }
-/* cater to different screen sizes. Nav bar reduced to icon in screens smaller than 600px */
-@media screen and (max-width:600px){
-    
-    #navbar a{
-        display:none;
-    }
-    #navbar a.icon{
-        float: right;
-        display: block;
-        padding: 0;
-        margin: 0;
-    }
-    #navbar.topNav.responsive a{
-        display:block;
-        text-align:left;
-        float:none;
-    }
-    .topNav.responsive a.icon{
-        position:absolute;
-        top: 0;
-        right:0;
-    }
-}
-    
+
     #myName{
     font-weight:500;
     font-size: 44px;
@@ -113,27 +90,35 @@ img:hover{
     -moz-box-shadow: 0 0 8px #88D5E9;
     -webkit-box-shadow: 0 0 8px #88D5E9;
 }
-#myInfo{
+.myInfoContact{
+        margin:20px;
+        padding:20px;
+    }
+
+.myInfo{
     width: 45%;
-    display: inline-block;
-    float: left;
+    margin:0 auto;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 50px;
+    margin-bottom:70px;
+    background-color:#4691A4;
+    color:white;
+    border: 2px solid;
+    border-radius:13px;
+    padding:20px;
 }
 .formDesign{
     width: 45%;
-    display: inline-block;
-    padding-left:50px;
+    margin:0 auto;
+    padding:75px;
+    border-top: 3px solid #F2F6F7;
+
 }
 .headInfo{
     font-size: 2em;
     font-weight: bold;
 }
 .formDesign ul{
-    margin: auto;
-    max-width: 100%;
     font-family: 'Josefin Sans', sans-serif;
-    border-left: 3px solid #F2F6F7;
 
 }
 .formDesign li{
@@ -168,14 +153,14 @@ img:hover{
     width: 49.5%;
 }
 .email{
-    width: 100%;
+    width: 95%;
 }
 .select{
-    width: 100%;
+    width: 95%;
 }
 .textarea{
     height: 100px;
-    width: 100%;
+    width: 95%;
     resize: none;
 }
 .submit{
@@ -219,4 +204,44 @@ img:hover{
     font-size: 15px;    
 }
 
+/* cater to different screen sizes. Nav bar reduced to icon in screens smaller than 600px */
+@media screen and (max-width:600px){
+    
+    #navbar a{
+        display:none;
+    }
+    #navbar a.icon{
+        float: right;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    #navbar.topNav.responsive a{
+        display:block;
+        text-align:left;
+        float:none;
+    }
+    .topNav.responsive a.icon{
+        position:absolute;
+        top: 0;
+        right:0;
+    }
+    .myInfoContact{
+        margin:20px;
+        padding:20px;
+        background-color:#f3f3f3;
+    }
+    .myInfo{
+        width:75%;
+        margin:0 auto;
+        margin-bottom:70px;
 
+    }
+    .formDesign{
+        width:62%;
+    }
+    .formDesign input[type=text], textarea, select{
+        width:100%;
+    }
+}
+    
