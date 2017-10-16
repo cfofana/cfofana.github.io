@@ -91,27 +91,29 @@ img:hover{
     -webkit-box-shadow: 0 0 8px #88D5E9;
 }
 .myInfoContact{
-        margin:20px;
-        padding:20px;
+    /*    margin:20px;*/
+     /*   padding:20px;*/
     }
 
 .myInfo{
-    width: 45%;
-    margin:0 auto;
+    width: 35%;
+    display:inline-block;
+    float:left;
     font-family: 'Josefin Sans', sans-serif;
-    margin-bottom:70px;
     background-color:#4691A4;
     color:white;
     border: 2px solid;
     border-radius:13px;
     padding:20px;
+    margin-right:7%;
+    margin-left:2%;
 }
 .formDesign{
     width: 45%;
-    margin:0 auto;
-    padding:75px;
-    border-top: 3px solid #F2F6F7;
-
+    display:inline-block;
+    float:left;
+    border-left: 3px solid #F2F6F7;
+    padding-left:4%;
 }
 .headInfo{
     font-size: 2em;
@@ -119,7 +121,6 @@ img:hover{
 }
 .formDesign ul{
     font-family: 'Josefin Sans', sans-serif;
-
 }
 .formDesign li{
     list-style: none;
@@ -150,7 +151,7 @@ img:hover{
 
 }
 .divided{
-    width: 49.5%;
+    width: 47.25%;
 }
 .email{
     width: 95%;
@@ -185,6 +186,7 @@ img:hover{
     height: 150px;
     text-align: center;
     padding-bottom: 20px;
+    clear:both;
 }
 #socialMedia p{
     font-size: 28px;
@@ -229,19 +231,25 @@ img:hover{
     .myInfoContact{
         margin:20px;
         padding:20px;
-        background-color:#f3f3f3;
+        overflow:auto;
+        text-align:center;
     }
     .myInfo{
         width:75%;
         margin:0 auto;
         margin-bottom:70px;
-
+        float:none;
     }
     .formDesign{
-        width:62%;
+        width:75%;
+        float:none;
+        border: 3px solid #F2F6F7;
+        padding:3%;
     }
-    .formDesign input[type=text], textarea, select{
-        width:100%;
+    .formDesign ul{
+        padding-left:0;
     }
+    
+   
 }
     
