@@ -4,7 +4,6 @@
     background-size:cover;
     background-image: url('images/coffee-desk-laptop-notebook(2).jpg');
     background-repeat: no-repeat;
-    background-position: right top;
     background-attachment: fixed;
     margin:1%;
     margin-top: 0;
@@ -27,8 +26,9 @@
     padding-left: 13%;
 }
 #navbar{
-    width: 32%;
-    float: right;
+    position:absolute;
+    top:0;
+    right:0;
     font-weight: bold;
     font-size: 20px;
 }
@@ -44,14 +44,14 @@
 }
 #navbar li{
     list-style: none;
-    display: inline;
+    display: inline-block;
 }
 
 .icon{
     display:none;
 }
 
-    #myName{
+#myName{
     font-weight:500;
     font-size: 44px;
     overflow:hidden;
@@ -185,8 +185,9 @@ img:hover{
     background-color: #118C8B;
     height: 150px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     clear:both;
+    position:relative;
 }
 #socialMedia p{
     font-size: 28px;
@@ -203,28 +204,82 @@ img:hover{
 }
 #copyright{
     text-align:left;
-    font-size: 15px;    
+    font-size: 15px;
+    position:absolute;
+    bottom:0;
+    
 }
 
-/* cater to different screen sizes. Nav bar reduced to icon in screens smaller than 600px */
-@media screen and (max-width:600px){
+/* cater to different screen sizes. */
+
+@media screen and (max-width:450px){
+    
+    .bgImage{
+        background-image: url('images/boat-1846791_1920.jpg');
+        width:100%;
+    }
+    .firstSection img {
+        display:block;
+        width:80%;
+        margin:0 auto;
+        margin-bottom:2%;
+    }
+    .secondSection img{
+        display:block;
+        width:80%;
+        margin:0 auto;
+        margin-bottom:5%;
+    }
+}
+@media screen and (max-width:768px){
     
     #navbar a{
         display:none;
+    }
+    #navbar{
+        height:0;
+        transition:0.5s;
+        width:100%;
     }
     #navbar a.icon{
         float: right;
         display: block;
         padding: 0;
         margin: 0;
+        position:fixed;
+        top: 25px;
+        right:0;
+    }
+    #navbar.topNav.responsive{
+        height:100%;
+        width:100%;
+        position:fixed;
+        z-index:1;
+        left:0;
+        top:0;
+        background-color:rgb(0,0,0);
+        background-color:rgba(0,0,0,0.9);
+        overflow-x:hidden;
+        transition:0.5s;
+    }
+    #navbar.topNav.responsive ul{
+        position:relative;
+        top:25%;
+    }
+    #navbar.topNav.responsive li{
+        display: block;
+        position:relative;
+        width:100%;
+        text-align:center;
     }
     #navbar.topNav.responsive a{
-        display:block;
-        text-align:left;
-        float:none;
+        display: block; 
+        padding:8px;
+        font-size:36px;
+        transition:0.5s;
     }
-    .topNav.responsive a.icon{
-        position:absolute;
+    #navbar.topNav.responsive a.icon{
+        position:fixed;
         top: 0;
         right:0;
     }
@@ -252,4 +307,11 @@ img:hover{
     
    
 }
+
+@media screen and(min-width:481px) and (max-width:768px){
     
+}
+
+@media screen and (min-width:769px){
+    
+}
