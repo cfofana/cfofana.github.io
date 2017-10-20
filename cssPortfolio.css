@@ -183,7 +183,7 @@ img:hover{
 
 #socialMedia{
     background-color: #118C8B;
-    height: 150px;
+    
     text-align: center;
     padding-bottom: 25px;
     clear:both;
@@ -198,6 +198,7 @@ img:hover{
     color:white;
     padding-right: 12.5px;
     padding-left: 12.5px;
+    padding-bottom:25px;
 }
 #socialMedia i:hover{
     background: #4691A4;
@@ -238,8 +239,6 @@ img:hover{
     }
     #navbar{
         height:0;
-        transition:0.5s;
-        width:100%;
     }
     #navbar a.icon{
         float: right;
