@@ -90,10 +90,6 @@ img:hover{
     -moz-box-shadow: 0 0 8px #88D5E9;
     -webkit-box-shadow: 0 0 8px #88D5E9;
 }
-.myInfoContact{
-    /*    margin:20px;*/
-     /*   padding:20px;*/
-    }
 
 .myInfo{
     width: 35%;
@@ -307,7 +303,7 @@ img:hover{
    
 }
 
-@media screen and(min-width:481px) and (max-width:768px){
+@media screen and (min-width:481px) and (max-width:768px){
     
 }
 
