@@ -1,0 +1,67 @@
+*{
+  margin:0;
+  padding:10px;
+}
+
+#bodyPage{
+  text-align:center;
+  margin:0 auto;
+  max-width: 90%;;
+  width:600px;
+  height:400px;
+  padding-top:3%;
+  padding-bottom:4%;
+  margin-top:2%;
+  margin-bottom:1%;
+  background-color:beige;
+  border: 1px outset gray;
+  border-radius:14px;
+  font-family: 'Gentium Basic', serif;
+  font-weight:bold;
+  font-size: 40px;
+}
+body{
+  background-image: url("https://res.cloudinary.com/dy17ukfwa/image/upload/v1489268687/sunrise-2125136_1920_mioln3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;  
+  height:100%;
+}
+a{
+  text-decoration:none;
+}
+#cityForm{
+  display:none;
+}
+#placeName{
+  font-size:50px;
+  font-weight:bold;
+  font-family: 'Courgette', cursive;
+}
+@media only screen and (max-width: 379px){
+    #bodyPage {
+      width: 90%; 
+      font-size: 17px;
+      height: 270px;
+  }
+  
+  #placeName{
+    font-size: 15px;
+}
+}
+@media only screen and (width: 414px){
+  #bodyPage{
+    height: 420px;
+    
+  }
+}
+
+@media only screen and (min-width: 1466px){
+  #bodyPage{
+      width: 800px; 
+      font-size: 60px;
+      height: 600px;
+  }
+  #placeName{
+    font-size:80px;
+  }
+}
