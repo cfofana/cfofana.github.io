@@ -1,0 +1,13 @@
+ #shapes{
+                height:200px;
+                width:200px;
+                background-color:red;
+                position:relative;
+                display: none;
+            }
+            body{
+                font-family : sans-serif;
+            }
+            #timeSpent{
+                font-weight: bold;
+            }
