@@ -75,20 +75,21 @@
 }
 .firstSection img{
     width: 30%;
-    height: 50%;
     margin:1%;
-    padding-bottom: 3%;
+    margin-bottom: 3%;
+    border: 1px solid orange;
 }
 
 .secondSection img{
     width: 30%;
-    height: 50%;
     margin:1%;
+    border: 1px solid orange;
 }
 img:hover{
     box-shadow: 0 0 8px #88D5E9;
     -moz-box-shadow: 0 0 8px #88D5E9;
     -webkit-box-shadow: 0 0 8px #88D5E9;
+    opacity: 0.2;
 }
 
 .myInfo{
@@ -197,7 +198,7 @@ img:hover{
     padding-bottom:25px;
 }
 #socialMedia i:hover{
-    background: #4691A4;
+    
 }
 #copyright{
     text-align:left;
@@ -217,15 +218,15 @@ img:hover{
     }
     .firstSection img {
         display:block;
-        width:80%;
+        width:90%;
         margin:0 auto;
-        margin-bottom:2%;
+        margin-bottom:9%;
     }
     .secondSection img{
         display:block;
-        width:80%;
+        width:90%;
         margin:0 auto;
-        margin-bottom:5%;
+        margin-bottom:9%;
     }
 }
 @media screen and (max-width:768px){
@@ -241,7 +242,6 @@ img:hover{
         display: block;
         padding: 0;
         margin: 0;
-        position:fixed;
         top: 25px;
         right:0;
     }
@@ -281,17 +281,17 @@ img:hover{
     .myInfoContact{
         margin:20px;
         padding:20px;
-        overflow:auto;
+        overflow:hidden;
         text-align:center;
     }
     .myInfo{
-        width:75%;
+        width:80%;
         margin:0 auto;
         margin-bottom:70px;
         float:none;
     }
     .formDesign{
-        width:75%;
+        width:80%;
         float:none;
         border: 3px solid #F2F6F7;
         padding:3%;

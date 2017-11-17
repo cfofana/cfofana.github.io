@@ -6,7 +6,7 @@
 #bodyPage{
   text-align:center;
   margin:0 auto;
-  max-width: 90%;;
+  max-width: 100%;;
   width:600px;
   height:400px;
   padding-top:3%;
@@ -24,7 +24,6 @@ body{
   background-image: url("https://res.cloudinary.com/dy17ukfwa/image/upload/v1489268687/sunrise-2125136_1920_mioln3.jpg");
   background-repeat: no-repeat;
   background-size:cover;  
-  height:100%;
 }
 a{
   text-decoration:none;
@@ -37,23 +36,8 @@ a{
   font-weight:bold;
   font-family: 'Courgette', cursive;
 }
-@media only screen and (max-width: 379px){
-    #bodyPage {
-      width: 90%; 
-      font-size: 17px;
-      height: 270px;
-  }
-  
-  #placeName{
-    font-size: 15px;
-}
-}
-@media only screen and (width: 414px){
-  #bodyPage{
-    height: 420px;
-    
-  }
-}
+
+
 
 @media only screen and (min-width: 1466px){
   #bodyPage{
@@ -65,3 +49,44 @@ a{
     font-size:80px;
   }
 }
+@media only screen and (max-width:680px){
+    #bodyPage{
+        width:80%;
+        height:500px;
+    }
+}
+@media only screen and (max-width:530px){
+    #bodyPage{
+        width:90%;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+  #bodyPage{
+      width:90%;  
+  }
+    
+}
+@media only screen and (max-width: 379px){
+    #bodyPage {
+      width: 90%;
+      height: 440px;
+      font-size: 30px;
+  }
+  
+  #placeName{
+    font-size: 33px;
+}
+}
+
+
+@media only screen and (max-width:260px){
+    #bodyPage{
+        font-size:17px;
+        height:100%;
+    } 
+    #placeName{
+        font-size:19px;
+    }
+} 
