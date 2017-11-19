@@ -24,6 +24,8 @@ body{
   background-image: url("https://res.cloudinary.com/dy17ukfwa/image/upload/v1489268687/sunrise-2125136_1920_mioln3.jpg");
   background-repeat: no-repeat;
   background-size:cover;  
+  position: relative;
+  background-position:center;    
 }
 a{
   text-decoration:none;
