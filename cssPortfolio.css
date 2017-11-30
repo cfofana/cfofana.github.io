@@ -1,13 +1,16 @@
-.bgImage{
-    height: 645px;
-    max-width: 100%;
+body, html{
+    height:100%;
+}
+.container{
+}
+.bgImage img{
+    height: 100%;
+    width: 100%;
     background-size:cover;
     background-image: url('images/coffee-desk-laptop-notebook(2).jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     margin:1%;
     margin-top: 0;
-    padding-bottom: 20%;
     margin-bottom:10px;    
 }
 .heading{
@@ -212,10 +215,6 @@ img:hover{
 
 @media screen and (max-width:450px){
     
-    .bgImage{
-        background-image: url('images/boat-1846791_1920.jpg');
-        width:100%;
-    }
     .firstSection img {
         display:block;
         width:90%;
