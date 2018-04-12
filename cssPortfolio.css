@@ -334,27 +334,29 @@ body, html{
 }
 
 */
-.col-container {
-    display: table;
-    width: 100%;
-}
+
  #portfolio {
      margin-bottom: 50px;
-}
-.colTest {
-    
 }
 
  #portfolio p {
      font-size: 3em;
      color: darkcyan;
      text-align: center;
-     margin-bottom: 40px;
+     margin: 40px 0;
  }
-#portfolio .row {
-    margin-bottom: 8%;
+#portfolio .row .col-sm-8{
+    padding-bottom: 5%;
 }
-
+#portfolio .row .col-sm-8:after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 8%;
+    margin: 0 auto;
+}
  
  .firstSection {
      width: 100%;
