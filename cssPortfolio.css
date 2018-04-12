@@ -341,7 +341,7 @@ body, html{
      border-radius: 13px;
      padding: 20px;
      background: linear-gradient(-94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
-     background: #212121;
+     
      color: #fff;
      display: flex;
      flex-direction: column;
@@ -360,7 +360,7 @@ body, html{
      border-radius: 13px;
      padding: 20px;
     background: linear-gradient(94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
-    background: #212121;
+   
      color: #fff;
      display: flex;
      flex-direction: column;
@@ -465,7 +465,7 @@ body, html{
  }
 
  #socialMedia {
-     background-color: #212121;
+     background-color: #4969D6;
      text-align: center;
      padding-bottom: 25px;
      clear: both;
