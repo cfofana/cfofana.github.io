@@ -496,7 +496,48 @@ body, html{
      color: #fff;
 
  }
-
+/*
+display: inline-block;
+            color: #fff;
+            border-radius: 4px;
+            z-index: 99;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+*/
+.arrow-up {
+    background: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+    text-align: center;
+    margin: 10px 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 181px;
+    cursor: pointer;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    
+}
+.arrow-up:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.arrow-up.active {
+            visibility: visible;
+            opacity: 1;
+        }
  /* cater to different screen sizes. */
 
  @media screen and (max-width:450px) {

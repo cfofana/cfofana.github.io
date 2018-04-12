@@ -235,6 +235,20 @@
                 $('.main-nav').toggleClass('main-nav--open', 300);
             });
         });
+        
+        window.onscroll = function() {
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector(".arrow-up").classList.add("active");
+            } else {
+                document.querySelector(".arrow-up").classList.remove("active");
+            }
+        }
+        
+       document.querySelector('.arrow-up').addEventListener('click', function() {
+          document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+       });
+        
         /*
         function displayLinks(){
             var x = document.getElementById("navbar");
