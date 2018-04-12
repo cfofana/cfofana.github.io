@@ -38,7 +38,10 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-
+    
+    <!-- ANIMATE.CSS -->
+    <link href="animate.css" rel="stylesheet">
+    
     <!-- Css link -->
     <link href="cssPortfolio.css" rel="stylesheet">
 
@@ -68,7 +71,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="centered">
+            <div class="centered wow zoomIn">
                 <h1>Web Developer</h1>
                 <p>HTML | CSS | JavaScript | Java | others...</p>
 
@@ -117,29 +120,29 @@
     <section id="portfolio">
         <div class="container">
             <p>Previous Work</p>
-            <div class="row wow slideInUp">
-                <div class="offset-sm-2 col-sm-8">
+            <div class="row">
+                <div class="wow slideInRight offset-sm-2 col-sm-8">
                     <a href="weatherapp.html" target="_blank"><img class="img-thumbnail" src="images/weatherApp.PNG" alt="Weather Application"></a>
                 </div>
-                <div class="offset-sm-2 col-sm-8">
+                <div class="wow slideInLeft offset-sm-2 col-sm-8">
                     <a href="randomQuote.html" target="_blank"><img class="img-thumbnail" src="images/randomQuote.PNG" alt="Random Quote Generator Application"></a>
                 </div>
             </div>
             
-            <div class="row wow slideInUp">
-               <div class="offset-sm-2 col-sm-8">
+            <div class="row">
+               <div class="wow slideInRight offset-sm-2 col-sm-8">
                     <a href="ToDoList/index.html" target="_blank"><img class="img-thumbnail" src="images/todoList.PNG" alt="To Do List Application"></a>
                 </div>
-                <div class="offset-sm-2 col-sm-8">
+                <div class="wow slideInLeft offset-sm-2 col-sm-8">
                     <a href="reactionTimer/reaction.html" target="_blank"><img class="img-thumbnail" src="images/reaction.PNG"  alt="Reaction Timer Application"></a>
                 </div>
             </div>
             
-            <div class="row wow slideInUp">
-                <div class="offset-sm-2 col-sm-8">
+            <div class="row">
+                <div class="wow slideInRight offset-sm-2 col-sm-8">
                     <a href="BBCclone/bbc.html" target="_blank"><img class="img-thumbnail" src="images/bbc.PNG" alt="Clone of BBC website"></a>
                 </div>
-                <div class="no-after offset-sm-2 col-sm-8">
+                <div class="wow slideInLeft no-after offset-sm-2 col-sm-8">
                     <a href="imageSlider.html" target="_blank"><img class="img-thumbnail" src="images/colorful-eggs-2096340_1920.jpg" alt="Slideshow"></a>
                 </div>
             </div>
@@ -211,7 +214,11 @@
 
     <!-- jQuery first, then javascript -->
     <script src="jquery.min.js"></script>
-    <script type="text/javascript">
+    <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <script>
         $(document).ready(function() {
             $('.menu-toggle').click(function() {
                 $(this).toggleClass('open');
