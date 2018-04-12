@@ -195,93 +195,7 @@
  }
 
 
- #contact {
-     background: linear-gradient(94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
-     color: #fff;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-
- }
-
-
-
- .contact-btn {
-     color: green;
-     padding: 5px 18px;
-     border-radius: 200px;
-     border: 1px solid green;
-     cursor: pointer;
- }
-
-
-
-
-
-
- @media screen and (min-width:768px) {
-     .container {
-         width: 95%;
-         max-width: 1200px;
-         margin: 0 auto;
-     }
-     header {
-         background-attachment: fixed;
-     }
-     header nav {
-         background-color: transparent;
-     }
-     .main-nav {
-         position: relative;
-         background-color: transparent;
-         clip-path: initial;
-         text-align: right;
-     }
-     .logo {
-         float: left;
-     }
-     .main-nav li {
-         display: inline;
-         border: none;
-     }
-     .main-nav a {
-         display: inline-block;
-         width: auto;
-         padding: 0 2em;
-         letter-spacing: 1.5px;
-     }
-     .main-nav a:after {
-         content: "";
-         display: none;
-         width: 100%;
-         height: 2px;
-         margin-top: 8px;
-         background-color: rgba(255, 255, 255, 0.9);
-     }
-     .main-nav a:hover,
-     .main-nav a:focus {
-         background-color: transparent;
-         color: #fff;
-         text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
-     }
-     .main-nav a:hover:after {
-         display: block;
-     }
-
-     .menu-toggle {
-         display: none;
-     }
- }
-
-
-
-
-
-
-
-
-
+ 
  /*
 
 body, html{
@@ -427,6 +341,7 @@ body, html{
      border-radius: 13px;
      padding: 20px;
      background: linear-gradient(-94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
+     background: #212121;
      color: #fff;
      display: flex;
      flex-direction: column;
@@ -445,6 +360,7 @@ body, html{
      border-radius: 13px;
      padding: 20px;
     background: linear-gradient(94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
+    background: #212121;
      color: #fff;
      display: flex;
      flex-direction: column;
@@ -550,7 +466,6 @@ body, html{
 
  #socialMedia {
      background-color: #212121;
-
      text-align: center;
      padding-bottom: 25px;
      clear: both;
@@ -600,53 +515,6 @@ body, html{
  }
 
  @media screen and (max-width:768px) {
-
-     #navbar a {
-         display: none;
-     }
-     #navbar {
-         height: 0;
-     }
-     #navbar a.icon {
-         float: right;
-         display: block;
-         padding: 0;
-         margin: 0;
-         top: 25px;
-         right: 0;
-     }
-     #navbar.topNav.responsive {
-         height: 100%;
-         width: 100%;
-         position: fixed;
-         z-index: 1;
-         left: 0;
-         top: 0;
-         background-color: rgba(0, 0, 0, 0.9);
-         overflow-x: hidden;
-         transition: 2.5s;
-     }
-     #navbar.topNav.responsive ul {
-         position: relative;
-         top: 25%;
-     }
-     #navbar.topNav.responsive li {
-         display: block;
-         position: relative;
-         width: 100%;
-         text-align: center;
-     }
-     #navbar.topNav.responsive a {
-         display: block;
-         padding: 8px;
-         font-size: 36px;
-         transition: 0.5s;
-     }
-     #navbar.topNav.responsive a.icon {
-         position: fixed;
-         top: 0;
-         right: 0;
-     }
      .myInfoContact {
          margin: 20px;
          padding: 20px;
@@ -654,10 +522,17 @@ body, html{
          text-align: center;
      }
      .myInfo {
-         width: 80%;
+         width: 100%;
          margin: 0 auto;
          margin-bottom: 70px;
          float: none;
+     }
+     
+     #contact {
+         width: 100%;
+         margin: 0 auto;
+         margin-bottom: 70px;
+         background: ;
      }
      .formDesign {
          width: 80%;
@@ -671,7 +546,58 @@ body, html{
 
 
  }
+@media screen and (min-width:768px) {
+     .container {
+         width: 95%;
+         max-width: 1200px;
+         margin: 0 auto;
+     }
+     header {
+         background-attachment: fixed;
+     }
+     header nav {
+         background-color: transparent;
+     }
+     .main-nav {
+         position: relative;
+         background-color: transparent;
+         clip-path: initial;
+         text-align: right;
+     }
+     .logo {
+         float: left;
+     }
+     .main-nav li {
+         display: inline;
+         border: none;
+     }
+     .main-nav a {
+         display: inline-block;
+         width: auto;
+         padding: 0 2em;
+         letter-spacing: 1.5px;
+     }
+     .main-nav a:after {
+         content: "";
+         display: none;
+         width: 100%;
+         height: 2px;
+         margin-top: 8px;
+         background-color: rgba(255, 255, 255, 0.9);
+     }
+     .main-nav a:hover,
+     .main-nav a:focus {
+         background-color: transparent;
+         color: #fff;
+         text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
+     }
+     .main-nav a:hover:after {
+         display: block;
+     }
 
- @media screen and (min-width:481px) and (max-width:768px) {}
+     .menu-toggle {
+         display: none;
+     }
+ }
 
- @media screen and (min-width:769px) {}
+ 
