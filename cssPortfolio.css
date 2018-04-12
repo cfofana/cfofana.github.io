@@ -325,7 +325,8 @@ body, html{
  }
 */
 .myInfoContact {
-    padding-bottom: 50px;
+    padding: 80px 0;
+    background: linear-gradient(-94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
 }
 .myInfoContact:after{
     content: "";
@@ -336,13 +337,10 @@ body, html{
      width: 35%;
      float: left;
      font-family: 'Josefin Sans', sans-serif;
-     background-color: #4691A4;
      color: white;
      border: 2px solid;
      border-radius: 13px;
      padding: 20px;
-     background: linear-gradient(-94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
-     
      color: #fff;
      display: flex;
      flex-direction: column;
@@ -354,14 +352,11 @@ body, html{
 #contact {
     width: 60%;
     float: right;
-    background-color: #4691A4;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     border: 2px solid;
      border-radius: 13px;
      padding: 20px;
-    background: linear-gradient(94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
-   
      color: #fff;
      display: flex;
      flex-direction: column;
@@ -467,6 +462,7 @@ body, html{
 
  #socialMedia {
      background-color: #4969D6;
+     background-color: rgba(255, 255, 255, 0.8);
      text-align: center;
      padding-bottom: 25px;
      clear: both;
@@ -476,11 +472,11 @@ body, html{
  #socialMedia p {
      font-size: 28px;
      padding-top: 25px;
-     color: white;
+     color: #000;;
  }
 
  #socialMedia i {
-     color: white;
+     color: #000;
      padding-right: 12.5px;
      padding-left: 12.5px;
      padding-bottom: 25px;
@@ -493,7 +489,7 @@ body, html{
      font-size: 18px;
      position: absolute;
      bottom: 0;
-     color: #fff;
+     color: #000;
 
  }
 /*
@@ -521,7 +517,7 @@ display: inline-block;
     margin: 10px 10px;
     position: fixed;
     right: 10px;
-    bottom: 181px;
+    bottom: 20px;
     cursor: pointer;
     z-index: 99;
     visibility: hidden;
