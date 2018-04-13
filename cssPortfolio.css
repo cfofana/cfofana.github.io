@@ -325,8 +325,10 @@ body, html{
  }
 */
 .myInfoContact {
-    padding: 80px 0;
+   
     background: linear-gradient(-94deg, rgba(87, 206, 37, 0.81), rgba(28, 62, 216, 0.81));
+    min-height: 70vh;
+    padding: 110px 0 0 0;
 }
 .myInfoContact:after{
     content: "";
@@ -555,7 +557,7 @@ display: inline-block;
  @media screen and (max-width:768px) {
      .myInfoContact {
          margin: 20px;
-         padding: 20px;
+         padding: 50px 50px 0 0;
          overflow: hidden;
          text-align: center;
      }
