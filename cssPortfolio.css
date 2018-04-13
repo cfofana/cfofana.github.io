@@ -479,12 +479,28 @@ body, html{
 
  #socialMedia i {
      color: #000;
-     padding-right: 12.5px;
-     padding-left: 12.5px;
-     padding-bottom: 25px;
+     margin-right: 12.5px;
+     margin-left: 12.5px;
+     margin-bottom: 25px;
  }
+.icon-cog {
+  color: green;
+}
+ #socialMedia .insta:hover {
+     background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#socialMedia .facebook:hover {
+     color: #3A589E;
+}
 
- #socialMedia i:hover {}
+#socialMedia .linkedin:hover {
+     color: #0077B5;
+}
+#socialMedia .github:hover {
+     color: #702B84;
+}
 
  #copyright {
      text-align: left;
