@@ -54,9 +54,10 @@
      right: 0;
      border-bottom-right-radius: 5px;
      border-bottom-left-radius: 5px;
-     clip-path: circle(0px at top right);
-     transition: clip-path ease-in-out 0.7s;
-
+   /*  clip-path: circle(0px at top right);
+     transition: clip-path ease-in-out 0.7s; */
+     transform: translateX(-115%);
+     transition: all ease-in-out 0.7s;
  }
 
  .main-nav li {
@@ -128,7 +129,8 @@
  }
 
  .main-nav.main-nav--open {
-     clip-path: circle(250% at top right);
+    /* clip-path: circle(250% at top right); */
+     transform: translateX(0px);
  }
 
  .centered {
