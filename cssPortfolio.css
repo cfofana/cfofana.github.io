@@ -624,6 +624,7 @@ display: inline-block;
          background-color: transparent;
          clip-path: initial;
          text-align: right;
+         transform: translateX(0);
      }
      .logo {
          float: left;
