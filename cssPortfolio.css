@@ -10,11 +10,17 @@
 
  .container {
      width: 100%;
+     padding: 0;
  }
-
+@media screen and (max-width:768px) {
+    .container {
+        
+    }
+}
  header {
      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('coffee-desk-laptop-notebook(2).jpg');
      height: 100vh;
+     min-height: 400PX;
      background-position: center center;
      background-size: cover;
      position: relative;
@@ -22,10 +28,11 @@
  }
 
  header nav {
-     padding: 1em 0;
-     background-color: transparent;
+     padding: 0.2em 0;
+     background-color: BROWN;
      position: relative;
      z-index: 2;
+     
  }
 
  .logo {
