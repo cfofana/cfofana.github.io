@@ -145,6 +145,7 @@
      justify-content: center;
      align-items: center;
      z-index: 1;
+     text-align: center;
  }
 
  .centered h1 {
@@ -155,6 +156,7 @@
      text-shadow: 2px 2px 5px black;
      text-transform: capitalize;
      margin-bottom: 50px;
+     
  }
 
  .centered p {
