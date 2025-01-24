@@ -14,11 +14,12 @@ $(document).ready(function(e){
   getRandomColor();
   changeColor();
   $.ajax({
-      url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      url: 'https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand',
       success: function(a) {
-        $("#quotes").html(a[0].content + "<p>- " + a[0].title + "</p>")
-        
-        var tweet = a[0].content;
+        console.log(a[0].content.rendered);
+        $("#quotes").html(a[0].content.rendered + "<p>- " + a[0].title.rendered + "</p>");
+        var tweet = (a[0].content).rendered;
+        console.log(tweet);
         tweet = tweet.replace("<p>", "");
         tweet = tweet.replace("&#8217;", "'");
         tweet = tweet.replace("&#8220;", "“");
@@ -31,7 +32,8 @@ $(document).ready(function(e){
         tweet = tweet.replace("&#8211;", "–");
         tweet = tweet.replace("&#8230;", "…");
         tweet = tweet.replace("</p>", "");
-        var tweetTitle = a[0].title;
+        console.log(tweet);
+        var tweetTitle = a[0].title.rendered;
         $("#tweet-it").attr("href", "https://twitter.com/intent/tweet?text=" + decodeURI(tweet) + "--"+decodeURI(tweetTitle));
       },
       cache: false
@@ -41,10 +43,10 @@ $(document).ready(function(e){
 $("#next-quote").on("click", function(e) {
   e.preventDefault();
   $.ajax({
-      url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      url: 'https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand',
       success: function(a) {
-        $("#quotes").html(a[0].content + "<p>— " + a[0].title + "</p>")
-        var tweet = a[0].content;
+        $("#quotes").html(a[0].content.rendered + "<p>- " + a[0].title.rendered + "</p>");
+        var tweet = (a[0].content).rendered;
         tweet = tweet.replace("<p>", "");
         tweet = tweet.replace("&#8217;", "'");
         tweet = tweet.replace("&#8220;", "“");
@@ -57,7 +59,7 @@ $("#next-quote").on("click", function(e) {
         tweet = tweet.replace("&#8211;", "–");
         tweet = tweet.replace("&#8230;", "…");
         tweet = tweet.replace("</p>", "");
-        var tweetTitle = a[0].title;
+        var tweetTitle = a[0].title.rendered;
         $("#tweet-it").attr("href", "https://twitter.com/intent/tweet?text=" + decodeURI(tweet) + "--"+decodeURI(tweetTitle));
       },
       cache: false
