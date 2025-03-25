@@ -477,7 +477,7 @@ body, html{
      background-color: #4969D6;
      background-color: rgba(255, 255, 255, 0.8);
      text-align: center;
-     padding-bottom: 25px;
+     padding-bottom: 2em;
      clear: both;
      position: relative;
  }
@@ -497,15 +497,7 @@ body, html{
 .icon-cog {
   color: green;
 }
- #socialMedia .insta:hover {
-     background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#socialMedia .facebook:hover {
-     color: #3A589E;
-}
-
+ 
 #socialMedia .linkedin:hover {
      color: #0077B5;
 }
@@ -513,11 +505,12 @@ body, html{
      color: #702B84;
 }
 
+#socialMedia .frontendmentor:hover {
+    color: #0077B5;
+}
+
  #copyright {
-     text-align: left;
-     font-size: 18px;
-     position: absolute;
-     bottom: 0;
+     font-size: 0.8rem;
      color: #000;
 
  }
